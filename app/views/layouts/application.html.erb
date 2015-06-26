@@ -10,6 +10,7 @@
 
 	<header>
 		<div class="col-xs-3">
+		<%= link_to root_path, :class => 'logo' do %>
 			<div class="circle">
 			  <br />
 			  You Know
@@ -18,13 +19,14 @@
 			  <br />
 			  to code
 			</div>
+			<% end %>
 		</div>
 		<div class="col-xs-4 slogan">
 			Splurting out unsolicited advice about entreprenuership since 2015
 			
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'Contribute', '#' %>
+			<%= link_to 'Contribute', new_quote_path %>
 			<%= link_to 'About', '#' %>
 
 			
@@ -41,7 +43,7 @@
 <div class="footer">
 	<div class="container">
 		<div class="col-xs-6">
-		<%= link_to "This isn't enough, I need more", "#", :class => 'next-quote' %>
+		<%= link_to "This isn't enough, I need more", root_path, :class => 'next-quote' %>
 		</div>
 		<div class="col-xs-6 footer-blurb">
 		Proudly hacked in NYC by <a href="http://www.twitter.com/ffarooq00", target="blank">faisal</a><br />
